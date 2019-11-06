@@ -37,8 +37,8 @@ export default class MainMapBlock extends Component {
   }
 
   static defaultProps = {
-    center: new List([37.48833, -78.56333]),
-    zoom: 10,
+    center: new immutable.List([37.48833, -78.56333]),
+    zoom: 8,
     visibleRowFirst: -1,
     visibleRowLast: -1,
     hoveredRowIndex: -1
