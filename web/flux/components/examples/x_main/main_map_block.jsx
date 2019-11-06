@@ -37,7 +37,7 @@ export default class MainMapBlock extends Component {
   }
 
   static defaultProps = {
-    center: new List([59.744465, 30.042834]),
+    center: new List([37.48833, -78.56333]),
     zoom: 10,
     visibleRowFirst: -1,
     visibleRowLast: -1,
@@ -111,7 +111,7 @@ export default class MainMapBlock extends Component {
 
     return (
       <GoogleMap
-        // apiKey={null}
+        // apiKey={'AIzaSyDuojycdpdo7ZzGEEKKRId492iyOU9RjdU'}
         center={this.props.center.toJS()}
         zoom={this.props.zoom}
         onBoundsChange={this._onBoundsChange}

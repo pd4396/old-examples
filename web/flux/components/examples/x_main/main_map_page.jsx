@@ -10,6 +10,12 @@ import { bindActionCreators } from 'redux';
 
 import * as allMapActions from 'actions/map_actions.js';
 
+import immutable from 'immutable';
+import VirginiaMarkers_json from 'components/examples/data/VirginiaMarkers.json';
+
+const VirginiaMarkers = immutable.fromJS(VirginiaMarkers_json);
+
+
 // slice actions to support map and table interfaces
 const mapActions = (({ changeBounds: onBoundsChange, markerHoverIndexChange: onMarkerHover, showBallon: onChildClick}) => ({
     onBoundsChange, onMarkerHover, onChildClick
@@ -37,7 +43,7 @@ export default class MainMapPage extends Component {
       <Connector select={state => ({
           center: state.map.get('mapInfo').get('center'),
           zoom: state.map.get('mapInfo').get('zoom'),
-          markers: state.map.get('dataFiltered'),
+          markers: VirginiaMarkers,
           visibleRowFirst: state.map.get('tableRowsInfo').get('visibleRowFirst'),
           visibleRowLast: state.map.get('tableRowsInfo').get('visibleRowLast'),
           maxVisibleRows: state.map.get('tableRowsInfo').get('maxVisibleRows'),
@@ -52,7 +58,7 @@ export default class MainMapPage extends Component {
   _renderTable() {
     return (
       <Connector select={state => ({
-          markers: state.map.get('dataFiltered'),
+          markers: VirginiaMarkers,
           hoveredMapRowIndex: state.map.get('hoverMarkerIndex'),
           resetToStartObj: state.map.get('mapInfo')
         })}>
