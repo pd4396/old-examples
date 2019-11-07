@@ -9,7 +9,8 @@ import {getScale, getRealFromTo} from '../helpers/calc_markers_visibility.js';
 import markerDescriptions from '../constants/marker_descriptions.js';
 import {customDistanceToMouse} from '../helpers/custom_distance.js';
 
-import {List} from 'immutable';
+//import {List} from 'immutable';
+import immutable from 'immutable';
 
 const K_MARGIN_TOP = 30;
 const K_MARGIN_RIGHT = 30;
