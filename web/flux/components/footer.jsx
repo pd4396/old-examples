@@ -15,17 +15,9 @@ export default class Footer extends Component {
 
   render() {
     return (
-      <footer className={cx(this.props.className, 'page-footer-holder')}>
-        <hr/>
-        <div className="page-footer">
-          <div className="page-footer__left">
-            <a target="_blank" href="https://github.com/istarkov">@ IVAN STARKOV</a>
-          </div>
-          <div className="page-footer__right">
-            <a target="_blank" href={'https://github.com/istarkov/google-map-react'}>GOOGLE-MAP-REACT README</a>
-          </div>
-        </div>
-      </footer>
+      <div style={{'text-align':'right','margin-right':'12pt'}}>
+        <a href={'https://transportation.seas.gwu.edu'} target={"_blank"}>About Us</a>
+      </div>
     );
   }
 }
