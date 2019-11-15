@@ -191,8 +191,7 @@ export default class MapMarker extends Component {
           onMouseLeave={this._onMouseLeaveContent}>
           <div
             onClick={this._onCloseClick}
-            className={cx('map-marker-hint__close-button', this.props.showBallon ? 'map-marker-hint__close-button--visible' : '')}>
-            close
+            className={cx('map-marker-hint__close-button', this.props.showBallon ? 'map-marker-hint__close-button--visible' : '')}>x
           </div>
 
           <div className="map-marker-hint__title">

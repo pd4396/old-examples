@@ -184,16 +184,15 @@ function getImage(imageName){
   else {return null}
 }
 
-const K_ROW_HEIGHT = 105;
-const K_HEADER_HEIGHT = 165;
+const K_ROW_HEIGHT = 100;
+const K_HEADER_HEIGHT = 100;
 const K_MINI_HEADER_HEIGHT = 40;
 
 export {K_ROW_HEIGHT, K_HEADER_HEIGHT, K_MINI_HEADER_HEIGHT};
 
 const K_STYLE_IMAGE = {
-  width: K_ROW_HEIGHT * 4 / 3,
-  height: K_ROW_HEIGHT,
-  borderLeft: '1px solid white'
+  width: 'auto',
+  height: 50
 };
 
 const K_KEY_COLUMN_RANK = 'K_KEY_COLUMN_RANK';
