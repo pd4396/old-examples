@@ -41,7 +41,7 @@ export default class MainMapPage extends Component {
   _renderMap() {
     return (
       <Connector select={state => ({
-          center: new immutable.List([37.48833, -78.56333]),
+          center: new immutable.List([37.5215, -78.8537]),
           zoom: 8,
           markers: VirginiaMarkers,
           visibleRowFirst: state.map.get('tableRowsInfo').get('visibleRowFirst'),
