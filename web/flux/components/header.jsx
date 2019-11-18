@@ -26,8 +26,8 @@ export default class Header extends Component {
   render() {
     return (
       <div>
-        <p style={{'text-align':'center','font-family':'Comic Sans MS','font-size':'18pt'}}><b>
-          Automatic Incident Detection Platform (Beta)
+        <p style={{'text-align':'center','font-family':'Courier New','font-size':'18pt'}}><b>
+          Virginia Automatic Incident Detection Platform (Beta)
         </b></p>
       </div>
     );

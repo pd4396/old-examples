@@ -185,7 +185,7 @@ function getImage(imageName){
 }
 
 const K_ROW_HEIGHT = 100;
-const K_HEADER_HEIGHT = 100;
+const K_HEADER_HEIGHT = 200;
 const K_MINI_HEADER_HEIGHT = 40;
 
 export {K_ROW_HEIGHT, K_HEADER_HEIGHT, K_MINI_HEADER_HEIGHT};
@@ -200,8 +200,6 @@ const K_ROW_CLASS_NAME_ODD = 'ice-table ice-table--row-odd';
 
 const K_ROW_CLASS_NAME_EVEN_HOVERED = 'ice-table ice-table--row-even ice-table--row-hovered';
 const K_ROW_CLASS_NAME_ODD_HOVERED = 'ice-table ice-table--row-odd ice-table--row-hovered';
-
-const K_SHOW_FILTERS_TEXT = 'Show filters';
 
 
 // DATA DEFINITION
@@ -235,24 +233,13 @@ export {columns};
 export function renderHeader(resetFn) {
   return (
     <div className="ice-table-header">
-      <div className="ice-table-header__filter-line-header">BEST FILTERS EVER (empty)</div>
-      <div className="ice-table-header__filter-line">
-        <hr />
-      </div>
-      <div className="ice-table-header__filter-line">
-        <hr />
-      </div>
-      <div className="ice-table-header__filter-line">
-        <hr />
-      </div>
-      <div className="ice-table-header__filter-line">
-        <hr />
-      </div>
+      <div className="ice-table-header__filter-line-header"><b>Message Center</b></div>
+      
       <div className="ice-table-header__show-filters">
         <a
           className="ice-table-header__show-filters-href ice-table-header__show-filters-href--disabled"
           onClick={resetFn}>
-          {K_SHOW_FILTERS_TEXT}
+            Show messages
         </a>
       </div>
     </div>
@@ -266,7 +253,7 @@ export function renderMiniHeader(resetFn) {
         <a
           className="ice-table-header__show-filters-href"
           onClick={resetFn}>
-            {K_SHOW_FILTERS_TEXT}
+            Show messages
           </a>
       </div>
     </div>
