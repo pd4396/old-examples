@@ -81,7 +81,7 @@ export default class MapMarker extends Component {
     hoverState: false,
     showBallonState: false,
     withText: false,
-    size: {width: 62, height: 60},
+    size: {width: 80, height: 60},
     origin: {x: 15 / 62, y: 1},
     imageClass: 'map-marker__marker--big',
     hintType: 'hint--info'

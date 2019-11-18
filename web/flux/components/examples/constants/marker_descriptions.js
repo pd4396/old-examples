@@ -5,7 +5,7 @@
 
 const markerDescriptions = [
   {
-    size: {width: 62, height: 60},
+    size: {width: 80, height: 60},
     origin: {x: 15 / 62, y: 1},
     withText: true,
     // image: require('icons/map_icons/map_icon_text_red.svg')
