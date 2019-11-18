@@ -190,11 +190,6 @@ const K_MINI_HEADER_HEIGHT = 40;
 
 export {K_ROW_HEIGHT, K_HEADER_HEIGHT, K_MINI_HEADER_HEIGHT};
 
-const K_STYLE_IMAGE = {
-  width: 'auto',
-  height: 50
-};
-
 const K_KEY_COLUMN_RANK = 'K_KEY_COLUMN_RANK';
 const K_KEY_COLUMN_DESCRIPTION = 'K_KEY_COLUMN_DESCRIPTION';
 const K_KEY_COLUMN_PHONE = 'K_KEY_COLUMN_PHONE';
@@ -216,7 +211,7 @@ const columns = [
     fixed: false,
     flexGrow: 1,
     label: '',
-    width: 105
+    width: 115
   },
   {
     dataKey: K_KEY_COLUMN_DESCRIPTION,
@@ -231,7 +226,7 @@ const columns = [
     flexGrow: 1,
     fixed: false,
     label: '',
-    width: 140
+    width: 85
   }
 ];
 
@@ -304,7 +299,7 @@ function renderColumn2(cellDataKey, rowData /*, rowIndex*/) {
   // image load hack (just put in array with key eq to src (c) istarkov :-))
   return (
     <div className="ice-table__column2">
-      {[<img key={rowData.get('image')} src={getImage(rowData.get('image'))} style={K_STYLE_IMAGE} />]}
+      {[<img key={rowData.get('image')} src={getImage(rowData.get('image'))} style={{width:'auto', height:50}} />]}
     </div>
   );
 }
