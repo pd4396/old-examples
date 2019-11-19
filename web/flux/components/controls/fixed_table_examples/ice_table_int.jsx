@@ -49,7 +49,9 @@ export default class IceTableInt extends Component {
     resetToStartObj: {}
   }
 
-  shouldComponentUpdate = shouldPureComponentUpdate;
+  shouldComponentUpdate() {
+    return false
+  };
 
   constructor(props) {
     super(props);
