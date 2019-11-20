@@ -205,8 +205,13 @@ export default class MapMarker extends Component {
             {this.props.marker.get('description')}
           </div>
 
+          <div className={cx('map-marker-hint__function', this.props.showBallon ? 'map-marker-hint__function--visible' : '')}>
+            <a href={'https://transportation.seas.gwu.edu'} target={"_blank"}>Street View</a>
+            <span><a href={'https://transportation.seas.gwu.edu'} target={"_blank"}>Real-time Data</a></span>
+          </div>
+
           <div>
-            <a className={cx('map-marker-hint__ap-link', this.props.showBallon ? 'map-marker-hint__ap-link--hidden' : '')}>Click to view more info</a>
+            <a className={cx('map-marker-hint__ap-link', this.props.showBallon ? 'map-marker-hint__ap-link--hidden' : '')}>Click to expand</a>
           </div>
 
         </div>

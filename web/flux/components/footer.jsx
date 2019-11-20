@@ -15,7 +15,7 @@ export default class Footer extends Component {
 
   render() {
     return (
-      <div style={{'text-align':'left','margin-left':'4pt'}}>
+      <div style={{'text-align':'left','margin-left':'4pt','font-family':'Courier New'}}>
         <a href={'https://transportation.seas.gwu.edu'} target={"_blank"}>About Us</a>
       </div>
     );

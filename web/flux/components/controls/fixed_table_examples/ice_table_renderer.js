@@ -237,7 +237,7 @@ export function renderHeader(resetFn) {
       
       <div className="ice-table-header__show-filters">
         <a
-          className="ice-table-header__show-filters-href ice-table-header__show-filters-href--disabled"
+          className="ice-table-header__show-filters-href--disabled"
           onClick={resetFn}>
             Show messages
         </a>

@@ -55,14 +55,14 @@
     visibility: visible
 
   .map-marker-hint__title
-    margin-bottom: 5px
+    margin-bottom: 8px
 
   .map-marker-hint__address
     font-weight: normal
     font-size: 11px
     font-style: italic
     color: rgba(0,0,0,0.5)
-    margin-bottom: 5px
+    margin-bottom: 8px
 
   .map-marker-hint__ap-link
     color: white
@@ -78,7 +78,20 @@
     transition: height 0.35s cubic-bezier(0.485, 1.650, 0.545, 0.835)
 
   .map-marker-hint__content--visible
-    height: 100px
+    height: 80px
     font-family: Courier New
+
+  .map-marker-hint__function
+    height: 0
+    transform: translate3d(0,0,0)
+    overflow: hidden
+    transition: height 0.35s cubic-bezier(0.485, 1.650, 0.545, 0.835)
+
+  .map-marker-hint__function--visible
+    height: 12px
+    font-family: Courier New
+    text-decoration: underline
+    display: flex
+    justify-content: space-between
 
 
