@@ -45,6 +45,10 @@ function calcMarkerTextStyle(scale, markerTextStyle) {
   };
 }
 
+function getStreetViewURL (lat, lng) {
+  return 'https://www.google.com/maps/@?api=1&map_action=pano&viewpoint='+String(lat)+'%2C'+String(lng)
+}
+
 export {K_SCALE_NORMAL};
 
 @controllable(['hoverState', 'showBallonState'])
@@ -206,7 +210,7 @@ export default class MapMarker extends Component {
           </div>
 
           <div className={cx('map-marker-hint__function', this.props.showBallon ? 'map-marker-hint__function--visible' : '')}>
-            <a href={'https://transportation.seas.gwu.edu'} target={"_blank"}>Street View</a>
+            <a href={getStreetViewURL(this.props.marker.get('lat'),this.props.marker.get('lng'))} target={"_blank"}>Street View</a>
             <span><a href={'https://transportation.seas.gwu.edu'} target={"_blank"}>Real-time Data</a></span>
           </div>
 
