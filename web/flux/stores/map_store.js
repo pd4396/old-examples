@@ -4,7 +4,8 @@ import {
   TABLE_VISIBLE_ROWS_CHANGE_MAP,
   TABLE_HOVERED_ROWS_INDEX_CHANGE_MAP,
   MARKER_HOVER_INDEX_CHANGE_MAP,
-  SHOW_BALLON_MAP} from '../consts/map_actions_types.js';
+  SHOW_BALLON_MAP,
+  SET_VIRGINIA_MARKERS,} from '../consts/map_actions_types.js';
 
 import immutable, {Map, List} from 'immutable';
 
@@ -42,6 +43,8 @@ function defaultMapState() {
       marginBounds: [60.2843135300829, 29.21655153124999, 59.58811868963835, 31.45776246874999],
       zoom: 9
     },
+
+    virginiaMarkers: [],
 
     openBalloonIndex: -1,
 
@@ -91,6 +94,13 @@ export default function map(state = defaultMapState(), {type: exampleActionType,
       const {openBalloonIndex} = data;
       return state
         .set('openBalloonIndex', openBalloonIndex === state.get('openBalloonIndex') ? -1 : openBalloonIndex);
+        
+    case SET_VIRGINIA_MARKERS:
+      const {
+        virginiaMarkers,
+      } = data;
+      return state
+        .set('virginiaMarkers', virginiaMarkers);
 
     default:
       return state;

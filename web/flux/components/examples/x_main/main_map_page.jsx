@@ -11,14 +11,11 @@ import { bindActionCreators } from 'redux';
 import * as allMapActions from 'actions/map_actions.js';
 
 import immutable from 'immutable';
-import VirginiaMarkers_json from 'components/examples/data/VirginiaMarkers.json';
-
-const VirginiaMarkers = immutable.fromJS(VirginiaMarkers_json);
 
 
 // slice actions to support map and table interfaces
-const mapActions = (({ changeBounds: onBoundsChange, markerHoverIndexChange: onMarkerHover, showBallon: onChildClick}) => ({
-    onBoundsChange, onMarkerHover, onChildClick
+const mapActions = (({ changeBounds: onBoundsChange, setVirginiaMarkers, markerHoverIndexChange: onMarkerHover, showBallon: onChildClick}) => ({
+    onBoundsChange, onMarkerHover, onChildClick, setVirginiaMarkers,
 }))(allMapActions);
 
 
@@ -29,7 +26,7 @@ const tableActions = (({ tableHoveredRowIndexChange: onHoveredRowIndexChange, ta
 
 export default class MainMapPage extends Component {
   static propTypes = {
-    layout: PropTypes.string
+    layout: PropTypes.string,
   };
 
   shouldComponentUpdate = shouldPureComponentUpdate;
@@ -43,7 +40,7 @@ export default class MainMapPage extends Component {
       <Connector select={state => ({
           center: new immutable.List([38.0, -79.0]),
           zoom: 8,
-          markers: VirginiaMarkers,
+          markers: state.map.get('virginiaMarkers'),
           visibleRowFirst: state.map.get('tableRowsInfo').get('visibleRowFirst'),
           visibleRowLast: state.map.get('tableRowsInfo').get('visibleRowLast'),
           maxVisibleRows: state.map.get('tableRowsInfo').get('maxVisibleRows'),
@@ -58,7 +55,7 @@ export default class MainMapPage extends Component {
   _renderTable() {
     return (
       <Connector select={state => ({
-          markers: VirginiaMarkers,
+          markers: state.map.get('virginiaMarkers'),
           hoveredMapRowIndex: state.map.get('hoverMarkerIndex'),
           resetToStartObj: state.map.get('mapInfo')
         })}>

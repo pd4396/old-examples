@@ -6,7 +6,8 @@ import {
   CHANGE_BOUNDS_MAP,
   TABLE_HOVERED_ROWS_INDEX_CHANGE_MAP,
   MARKER_HOVER_INDEX_CHANGE_MAP,
-  SHOW_BALLON_MAP} from '../consts/map_actions_types.js';
+  SHOW_BALLON_MAP,
+  SET_VIRGINIA_MARKERS} from '../consts/map_actions_types.js';
 
 import genMarkersData from '../components/examples/data/gen_markers_data.js';
 
@@ -63,6 +64,13 @@ export function markerHoverIndexChange(hoverMarkerIndex) {
     type: MARKER_HOVER_INDEX_CHANGE_MAP,
     hoverMarkerIndex
   };
+}
+
+export function setVirginiaMarkers(virginiaMarkers) {
+  return {
+    type: SET_VIRGINIA_MARKERS,
+    virginiaMarkers,
+  }
 }
 
 export function showBallon(openBalloonIndex) {

@@ -12,6 +12,15 @@ import {customDistanceToMouse} from '../helpers/custom_distance.js';
 //import {List} from 'immutable';
 import immutable from 'immutable';
 
+
+async function fetchVirginiaMarkers() {
+  const url = '../../assets/VirginiaMarkers.json';
+  const response = await fetch(url);
+  const data = await response.json();
+  return immutable.fromJS(data);
+};
+
+
 const K_MARGIN_TOP = 30;
 const K_MARGIN_RIGHT = 30;
 const K_MARGIN_BOTTOM = 30;
@@ -49,6 +58,19 @@ export default class MainMapBlock extends Component {
 
   constructor(props) {
     super(props);
+  }
+  componentDidMount() {
+    this.timer = setInterval(() => {
+      (async () => {
+        const virginiaMarkers = await fetchVirginiaMarkers();
+        this.props.setVirginiaMarkers(virginiaMarkers);
+      })();
+    }, 500)
+  }
+  componentWillUnmount() {
+    if (this.timer) {
+      clearInterval(this.timer);
+    }
   }
 
   _onBoundsChange = (center, zoom, bounds, marginBounds) => {
@@ -112,7 +134,7 @@ export default class MainMapBlock extends Component {
 
     return (
       <GoogleMap
-        // apiKey={'AIzaSyDuojycdpdo7ZzGEEKKRId492iyOU9RjdU'}
+        apiKey={''}
         center={this.props.center.toJS()}
         zoom={this.props.zoom}
         onBoundsChange={this._onBoundsChange}
