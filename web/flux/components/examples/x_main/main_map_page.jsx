@@ -14,13 +14,13 @@ import immutable from 'immutable';
 
 
 // slice actions to support map and table interfaces
-const mapActions = (({ changeBounds: onBoundsChange, setVirginiaMarkers, markerHoverIndexChange: onMarkerHover, showBallon: onChildClick}) => ({
-    onBoundsChange, onMarkerHover, onChildClick, setVirginiaMarkers,
+const mapActions = (({ changeBounds: onBoundsChange, markerHoverIndexChange: onMarkerHover, showBallon: onChildClick, setVirginiaMarkers}) => ({
+    onBoundsChange, onMarkerHover, onChildClick, setVirginiaMarkers
 }))(allMapActions);
 
 
-const tableActions = (({ tableHoveredRowIndexChange: onHoveredRowIndexChange, tableVisibleRowsChange: onVisibleRowsChange, showBallon: onRowClick}) => ({
-    onHoveredRowIndexChange, onVisibleRowsChange, onRowClick
+const tableActions = (({ tableHoveredRowIndexChange: onHoveredRowIndexChange, tableVisibleRowsChange: onVisibleRowsChange, showBallon: onRowClick, setVirginiaMarkers}) => ({
+    onHoveredRowIndexChange, onVisibleRowsChange, onRowClick, setVirginiaMarkers
 }))(allMapActions);
 
 

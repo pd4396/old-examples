@@ -65,7 +65,7 @@ export default class MainMapBlock extends Component {
         const virginiaMarkers = await fetchVirginiaMarkers();
         this.props.setVirginiaMarkers(virginiaMarkers);
       })();
-    }, 500)
+    }, 1000)
   }
   componentWillUnmount() {
     if (this.timer) {
