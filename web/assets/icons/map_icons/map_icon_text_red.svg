@@ -1,15 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" width="80.17021276595744" height="60" version="1.1" style=""><rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="none" stroke="none" class="selected" style=""/>
-    <!-- Generator: Sketch 3.0.4 (8054) - http://www.bohemiancoding.com/sketch -->
-    <title>icons 2</title>
-    <desc>Created with Sketch.</desc>
-    <defs/>
-    
-<g class="currentLayer" style=""><title>Layer 1</title><g id="icon_w_text" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage" class="">
-        <g id="map39-+-Rectangle-1" sketch:type="MSLayerGroup">
-            <g id="map39" sketch:type="MSShapeGroup">
-                <path d="M14.985941479264653,0 C6.707613739150437,0 -8.865017233789217e-17,5.03377156 -8.865017233789217e-17,11.2462955 L-8.865017233789217e-17,29.9901212 C-8.865017233789217e-17,36.2026451 6.707613739150437,41.2364167 14.985941479264653,41.2364167 L21.484140138139086,41.5617849 L19.534116063568803,59.0262667 L56.896218025535156,41.5004739 L64.93907974348015,41.2364167 C73.2174075351589,41.2364167 79.92502122274482,36.2026451 79.92502122274482,29.9901212 L79.92502122274482,11.2462955 C79.92502122274482,5.03377156 73.2174075351589,0 64.93907974348015,0 L14.985941479264653,0 z" id="Path-2" fill-opacity="0.6" fill="#FFFFFF"/>
-                <path d="M16.59733303617483,2 C8.853090959624046,2 2.578226491056285,6.75611069 2.578226491056285,12.6259542 L2.578226491056285,30.3358779 C2.578226491056285,36.2057214 8.853090959624046,40.9618321 16.59733303617483,40.9618321 L25.94106754849634,40.9618321 L19.277254964033016,60.0458313 L53.98161715649095,40.9618321 L63.327688186569986,40.9618321 C71.07193030179415,40.9618321 77.34679473168853,36.2057214 77.34679473168853,30.3358779 L77.34679473168853,12.6259542 C77.34679473168853,6.75611069 71.07193030179415,2 63.327688186569986,2 L16.59733303617483,2 z" id="Shape" fill="#00BCD4"/>
-            </g>
-            <rect id="Rectangle-1" fill="#FFFFFF" sketch:type="MSShapeGroup" x="7.734679691944343" y="7" width="64.45566054587334" height="29" rx="7"/>
-        </g>
-    </g></g></svg>
+<svg width="80" height="60" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="62" width="82" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path stroke="#cc0000" id="svg_1" d="m2.42337,8.522759l0,0c0,-3.366894 3.856526,-6.0963 8.613791,-6.0963l3.915362,0l0,0l18.79373,0l35.238234,0c2.284525,0 4.475475,0.642286 6.090878,1.785565c1.615393,1.143279 2.522918,2.693897 2.522918,4.310735l0,15.240751l0,0l0,9.144448l0,0c0,3.366895 -3.856523,6.0963 -8.613793,6.0963l-35.238234,0l-24.551689,15.501473l5.757959,-15.501473l-3.915362,0c-4.757265,0 -8.613791,-2.729404 -8.613791,-6.0963l0,0l0,-9.144448l0,0l-0.000003,-15.240751z" stroke-width="4.5" fill="#ffffff"/>
+ </g>
+</svg>

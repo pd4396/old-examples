@@ -10,32 +10,22 @@
         left: calc(50% + #{$i}px)
 
   .map-marker__marker
-    &.map-marker__marker--ap
-      background-image: url('../assets/icons/map_icons/map_icon_violet.svg')
-    &.map-marker__marker--as
-      background-image: url('../assets/icons/map_icons/map_icon_yellow.svg')
-    &.map-marker__marker--big
-      background-image: url('../assets/icons/map_icons/map_icon_text_red.svg')
+    &.map_icon_text_blue
+      background-image: url('../assets/icons/map_icons/map_icon_text_blue.svg')
+    &.map_icon_text_orange
+      background-image: url('../assets/icons/map_icons/map_icon_text_orange.svg')
     &.map_icon_text_red
       background-image: url('../assets/icons/map_icons/map_icon_text_red.svg')
-    &.map_icon_text_indigo
-      background-image: url('../assets/icons/map_icons/map_icon_text_indigo.svg')
-    &.map_icon_flag_orange
-      background-image: url('../assets/icons/map_icons/map_icon_flag_orange.svg')
-    &.map_icon_std
-      background-image: url('../assets/icons/map_icons/map_icon_std.svg')
-    &.map_icon_std_orange
-      background-image: url('../assets/icons/map_icons/map_icon_std_orange.svg')
+    &.map_icon_text_grey
+      background-image: url('../assets/icons/map_icons/map_icon_text_grey.svg')
 
   &.hint--balloon
     @include ice-hint-type(rgba(97, 104, 172, 1))
     .hint__content
-      // чтобы цвет bg хинта плавно менялся
       z-index: $zIndex - 20
       transition: background-color 1.0s ease
     &:before
       z-index: $zIndex - 19
-      // чтобы цвет стрелочки плавно менялся
       transition: border-color 1.0s ease
 
   .map-marker-hint
@@ -55,14 +45,14 @@
     visibility: visible
 
   .map-marker-hint__title
-    margin-bottom: 8px
+    font-family: Courier New
+    margin-bottom: 12px
 
   .map-marker-hint__address
     font-weight: normal
-    font-size: 11px
     font-style: italic
-    color: rgba(0,0,0,0.5)
-    margin-bottom: 8px
+    color: black
+    margin-bottom: 12px
 
   .map-marker-hint__ap-link
     color: white

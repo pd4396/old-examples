@@ -28,9 +28,6 @@ export default class IceTable extends Component {
     resetToStartObj: {}
   };
 
-  shouldComponentUpdate() {
-    return false
-  };
 
   constructor(props) {
     super(props);
