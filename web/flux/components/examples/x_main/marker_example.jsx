@@ -85,8 +85,8 @@ export default class MapMarker extends Component {
     hoverState: false,
     showBallonState: false,
     withText: false,
-    size: {width: 80, height: 60},
-    origin: {x: 15 / 62, y: 1},
+    size: {width: 40, height: 40},
+    origin: {x: 1 / 2, y: 1},
     imageClass: 'map-marker__marker--big',
     hintType: 'hint--info'
   };
@@ -181,12 +181,6 @@ export default class MapMarker extends Component {
         <div
           style={styleMarkerMarker}
           className={cx('map-marker__marker', imageClass)}>
-          {this.props.withText ?
-            <div style={textStyle}>
-            {this.props.marker.get('number')}
-            </div>
-            :
-            <div/>}
         </div>
         <div
           style={hintBaloonHorizontalPosStyle}

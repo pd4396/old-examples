@@ -5,32 +5,32 @@
 
 const markerDescriptions = [
   {
-    size: {width: 80, height: 60},
-    origin: {x: 1 / 80, y: 1},
+    size: {width: 40, height: 43},
+    origin: {x: 1 / 2, y: 1},
     withText: true,
-    // image: require('icons/map_icons/map_icon_text_blue.svg')
-    imageClass: 'map_icon_text_blue'
+    // image: require('icons/map_icons/map_icon_interstate')
+    imageClass: 'map_icon_interstate'
   },
   {
-    size: {width: 80, height: 60},
-    origin: {x: 1 / 80, y: 1},
+    size: {width: 40, height: 39},
+    origin: {x: 1 / 2, y: 1},
     withText: true,
-    // image: require('icons/map_icons/map_icon_text_orange.svg')
-    imageClass: 'map_icon_text_orange'
+    // image: require('icons/map_icons/map_icon_usroute.svg')
+    imageClass: 'map_icon_usroute'
   },
   {
-    size: {width: 80, height: 60},
-    origin: {x: 1 / 80, y: 1},
+    size: {width: 40, height: 44},
+    origin: {x: 1 / 2, y: 1},
     withText: true,
-    // image: require('icons/map_icons/map_icon_text_red.svg')
-    imageClass: 'map_icon_text_red'
+    // image: require('icons/map_icons/map_icon_stateroute.svg')
+    imageClass: 'map_icon_stateroute'
   },
   {
-    size: {width: 80, height: 60},
-    origin: {x: 1 / 80, y: 1},
+    size: {width: 40, height: 44},
+    origin: {x: 1 / 2, y: 1},
     withText: true,
-    // image: require('icons/map_icons/map_icon_text_grey.svg')
-    imageClass: 'map_icon_text_grey'
+    // image: require('icons/map_icons/map_icon_others.svg')
+    imageClass: 'map_icon_others'
   }
 ];
 

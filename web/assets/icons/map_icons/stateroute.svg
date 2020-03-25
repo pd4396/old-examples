@@ -1,0 +1,14 @@
+<svg width="40" height="45" xmlns="http://www.w3.org/2000/svg">
+ <!-- Generator: Sketch 3.0.4 (8054) - http://www.bohemiancoding.com/sketch -->
+
+ <title>icons 2</title>
+ <desc>Created with Sketch.</desc>
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="42" height="47" id="canvas_background" fill="none"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path stroke="#000" transform="rotate(90 19.983760833740234,22.366613388061527) " id="svg_1" d="m-1.353668,3.387417l23.277196,0l19.397661,18.979199l-19.397661,18.979197l-23.277196,0l0,-37.958396z" stroke-width="1.5" fill="#fff"/>
+ </g>
+</svg>
